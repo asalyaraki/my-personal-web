@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.txt{
+    stroke: black;
+    -webkit-text-stroke-color: black;
+    stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+}
+.txt1{
+    stroke: rgb(235, 235, 235);
+    -webkit-text-stroke-color: rgb(235, 235, 235);
+    stroke-width: 1px;
+    -webkit-text-stroke-width: 1px;
+}
+
+.bdr{
+    border: 2px dashed white;
+}
+.bdr1{
+    border: 1px dashed gray;
+}
+.bdr2{
+    border-left: 1px dashed gray;
+}
+.bdr3{
+    border-bottom: 1px dashed gray;
+}
+
+.inp{
+    transition: .2s;
+    &:hover{
+        border-bottom: 1px dashed black;
+        
+    }
+}
+
+.anime1{
+    animation: anime1 1s linear infinite;
+}
+
+@font-face {
+    font-family: kalam;
+    src: url(../font/Kalam-Regular.ttf);
+}
+
+@keyframes anime1{
+    to{
+        width: 120px;
+    }
+}
+
+
